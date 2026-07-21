@@ -23,16 +23,16 @@ evaluation.
 
 ## Pipeline
 
-1. **Preprocessing** — grayscale conversion, resize, histogram equalization,
+1. **Preprocessing** grayscale conversion, resize, histogram equalization,
    and normalization on every MRI scan before feature extraction.
-2. **Feature extraction** — images downscaled to 64x64 and flattened into a
+2. **Feature extraction** images downscaled to 64x64 and flattened into a
    4096-dimensional feature vector shared by both models.
-3. **Training** — an ANN (Keras `Sequential`, dense + dropout + batch
+3. **Training** an ANN (Keras `Sequential`, dense + dropout + batch
    normalization layers, early stopping and LR scheduling) and an SVM
    (`SVC(C=10)`) are trained independently on the same splits.
-4. **Evaluation** — accuracy, per-class precision/recall/F1, and confusion
+4. **Evaluation** accuracy, per-class precision/recall/F1, and confusion
    matrix for both models.
-5. **Interactive demo** — a Gradio UI for uploading a scan and getting a live
+5. **Interactive demo** a Gradio UI for uploading a scan and getting a live
    prediction from the selected model.
 
 ![Preprocessing pipeline](results/preprocessing.png)
@@ -66,5 +66,5 @@ The notebook was built for Google Colab and downloads the dataset via
 `kagglehub` on first run.
 
 1. Open `brain_tumor_classification_ann_svm.ipynb` in Colab or Jupyter.
-2. Run all cells top to bottom — dataset download, preprocessing, training,
+2. Run all cells top to bottom dataset download, preprocessing, training,
    evaluation, and the Gradio demo are each in their own labeled section.
