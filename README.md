@@ -1,8 +1,8 @@
-# Brain Tumor Classification — ANN & SVM
+# Brain Tumor Classification ANN & SVM
 
 Classifying brain tumors from MRI scans by comparing two machine learning
-approaches — an Artificial Neural Network (ANN) and a Support Vector Machine
-(SVM) — trained on the same preprocessed dataset for a fair, side-by-side
+approaches an Artificial Neural Network (ANN) and a Support Vector Machine
+(SVM) trained on the same preprocessed dataset for a fair, side-by-side
 evaluation.
 
 ## Team
